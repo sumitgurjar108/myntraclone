@@ -1,0 +1,54 @@
+.homepage {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .homepage__banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .homepage__categories, .homepage__featured {
+    margin-bottom: 40px;
+  }
+  
+  .homepage__categories h2, .homepage__featured h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .categories__list, .featured__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .category__item, .featured__item {
+    flex: 1 1 18%;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .category__item img, .featured__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .category__item p, .featured__item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .category__item:hover, .featured__item:hover {
+    transform: scale(1.05);
+  }
+  

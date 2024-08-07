@@ -1,0 +1,22 @@
+#landing_page{
+    margin-top: 90px;
+    
+}
+#landing_page img{
+    width: 100%;
+    cursor: pointer;
+ 
+}
+#lp_sale{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 0px;
+}
+#lp_sale>div{
+    margin-top: -5px;
+}
+#lp_offers{
+    display: flex;
+   overflow: hidden;
+}

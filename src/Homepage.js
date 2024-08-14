@@ -51,10 +51,6 @@ const Homepage = () => {
             <img src="https://images.jdmagicbox.com/quickquotes/images_main/mercedes-battery-operated-4x4-jumbo-size-ride-toy-car-for-kids-with-windshield-blue-2220793414-cwbb1e77.jpg" alt="Product 4" />
             <p>Product 4</p>
           </div>
-          {/* <div className="featured__item">
-            <img src="" alt="Product 4" />
-            <p>Product 5</p>
-          </div> */}
         </div>
       </div>
     </div>

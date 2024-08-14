@@ -1,13 +1,25 @@
+// Navbar.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
-import ProductList from './ProductList';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mUEIoq3UUDmgCEHRvIn72bcQ63JIZ8eH1A&s' height={"60px"} width={"60px"} alt="Logo" />
+      <div className="navbar__logo" onClick={handleLogoClick} style={{ cursor: 'grab' }}>
+        <img 
+          src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mUEIoq3UUDmgCEHRvIn72bcQ63JIZ8eH1A&s' 
+          height={"60px"} 
+          width={"60px"} 
+          alt="Logo" 
+        />
       </div>
       <div className="navbar__links">
         <a href="/men"><i className="fas fa-male"></i> Men</a>

@@ -1,33 +1,54 @@
-.product-list {
+.navbar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  padding-bottom: 20px; /* Adds space below the navbar */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.product-card {
-  cursor: pointer;
+.navbar__logo img {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar__links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar__search input {
+  padding: 5px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  transition: transform 0.2s;
 }
 
-.product-card:hover {
-  transform: scale(1.05);
+.navbar__search button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.product-info h3 {
-  margin: 0;
+.navbar__actions a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
 }
 
-.product-info p {
-  margin: 5px 0 0 0;
-}
+/* Product List and Detail Styles */
 .product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 40px; 
 }
 
 .product-card {
@@ -49,7 +70,30 @@
 .product-info p {
   margin: 5px 0 0 0;
 }
-.close-button{
+
+/* Product Detail Styles */
+.product-detail {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+
+.product-detail img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-detail .product-info {
+  margin-top: 20px;
+}
+
+.product-detail .close-button {
   background-color: purple;
   padding: 10px;
   width: 75px;
@@ -58,12 +102,37 @@
   border-radius: 15px;
   border: none;
   color: white;
-  display: flex;
-  float: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   font-weight: 800;
-
+  cursor: pointer;
 }
-.close-button:hover{
+
+.close-button:hover {
   background-color: pink;
   color: blue;
 }
+
+/* Heading Styles  */
+ h1 {
+  color:rgba(162, 30, 72, 0.948);
+  margin: 10px;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  background-color: #f8f8f8;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 1000;
+}
+body {
+  padding-top: 80px; 
+}
+
